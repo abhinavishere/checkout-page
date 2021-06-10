@@ -1,0 +1,249 @@
+:root {
+  --ff-poppins: "Poppins", sans-serif;
+  --color-accent: #f2994a;
+  --bg-gray-light: #f2f2f2;
+  --gray-dark: #333;
+  --border-gray-dark: #bdbdbd;
+  --gray-2: #4e5150;
+  --gray-5: #e0e0e0;
+  --gray-input-border: #828282;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--ff-poppins);
+  padding: 1.5rem;
+}
+
+body img {
+  width: 100%;
+}
+
+.checkout-form__title {
+  padding: 1rem 0;
+  font-size: 2.4rem;
+}
+
+.cart {
+  background-color: var(--bg-gray-light);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.cart__item {
+  display: flex;
+}
+.cart__item--img {
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
+.cart__item--img img {
+  height: 90%;
+  border-radius: 20px;
+}
+.cart__item--desc {
+  position: relative;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.cart__item--desc h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+}
+.cart__item--desc p span {
+  font-size: 1rem;
+  text-decoration: line-through;
+  color: var(--gray-2);
+  margin-left: 1rem;
+}
+
+.cart__item--desc p {
+  font-size: 1.4rem;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.cart__value {
+  margin-top: 8rem;
+}
+.cart__value span {
+  float: right;
+}
+.cart__value--ship,
+.cart__value--total {
+  font-size: 1.4rem;
+  border-top: 1px solid var(--border-gray-dark);
+  padding: 0.4rem 0.2rem;
+}
+
+.counter {
+  position: absolute;
+  display: inline-block;
+  bottom: 2rem;
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-gray-dark);
+  border-radius: 1rem;
+  /* gap: 1rem; */
+}
+.counter__operator {
+  font-size: 2rem;
+  color: var(--gray-5);
+}
+.counter__val {
+  font-size: 1.6rem;
+  margin-inline: 1rem;
+}
+
+.contact,
+.address {
+  margin-top: 4rem;
+}
+
+.contact__title,
+.address__title {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.form__group--inline {
+  display: inline-block;
+  width: 49%;
+}
+
+.form__label,
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+.form__input {
+  border-radius: 0.8rem;
+  border: 1px solid var(--gray-input-border);
+  padding: 1rem;
+}
+.form__input::placeholder {
+  font-family: var(--ff-poppins);
+  font-size: 1.2rem;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.checkbox-group__input {
+  margin-right: 1rem;
+}
+
+.btn-submit {
+  display: block;
+  /* width: 50%; */
+  max-width: 160px;
+  margin: 0.8rem 0;
+  padding: 1rem 2.4rem;
+  background-color: var(--color-accent);
+  color: var(--bg-gray-light);
+  border: none;
+  font-family: var(--ff-poppins);
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.form {
+  margin-bottom: 5rem;
+}
+
+.attribution {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.4rem;
+  color: var(--border-gray-dark);
+}
+
+.btn-author,
+.btn-challenge {
+  text-decoration: none;
+  color: var(--gray-input-border);
+}
+
+@media screen and (min-width: 500px) {
+  .checkout-form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 4rem;
+    align-content: flex-start;
+  }
+
+  .checkout-form__title {
+    grid-column: 1/3;
+    font-size: 3.6rem;
+  }
+  .cart {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .form {
+    grid-row: 2/4;
+    grid-column: 1/2;
+  }
+  .attribution {
+    grid-column: 1/3;
+  }
+  .contact {
+    margin-top: 0;
+  }
+
+  /* .cart__item--img img {
+    width: 90%;
+  } */
+  .cart__item--desc h3 {
+    font-size: 1.6rem;
+  }
+  .cart__item--desc p {
+    font-size: 1.6rem;
+  }
+  .cart__item--desc p span {
+    font-size: 1.2rem;
+  }
+  .contact__title,
+  .address__title {
+    font-size: 1.8rem;
+  }
+  .form__label {
+    font-size: 1.2rem;
+  }
+  .form__input {
+    padding: 1rem 2.5rem;
+  }
+  .form__input::placeholder {
+    font-size: 1.4rem;
+  }
+  .form {
+    margin-bottom: 2rem;
+  }
+  .cart__value--ship,
+  .cart__value--total {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Scripts -->
+    <script
+      defer
+      src="https://kit.fontawesome.com/b6c975b9d9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <main class="checkout-form">
+      <h1 class="checkout-form__title">Checkout</h1>
+      <div class="cart">
+        <div class="cart__item">
+          <div class="cart__item--img">
+            <img src="./photo1.png" alt="Vintage Backbag" />
+          </div>
+          <div class="cart__item--desc">
+            <h3>Vintage Backbag</h3>
+            <p>$54.99 <span>$94.99</span></p>
+            <div class="counter">
+              <i class="fas fa-minus-square counter__operator"></i>
+              <span class="counter__val">1</span>
+              <i class="fas fa-plus-square counter__operator"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart__item">
+          <div class="cart__item--img">
+            <img src="./photo2.png" alt="Levi Shoes" />
+          </div>
+          <div class="cart__item--desc">
+            <h3>Levi Shoes</h3>
+            <p>$74.99 <span>$124.99</span></p>
+            <div class="counter">
+              <i class="fas fa-minus-square counter__operator"></i>
+              <span class="counter__val">1</span>
+              <i class="fas fa-plus-square counter__operator"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart__value">
+          <p class="cart__value--ship">
+            Shipping <span class="ship-value">$19.00</span>
+          </p>
+          <p class="cart__value--total">
+            Total <span class="total-value">$148.98</span>
+          </p>
+        </div>
+      </div>
+      <div class="form">
+        <div class="contact">
+          <h4 class="contact__title">Contact information</h4>
+          <form action="POST" class="contact__form">
+            <div class="form__group">
+              <label for="email" class="form__label">E-mail</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form__input"
+                placeholder="Enter your email..."
+              />
+            </div>
+            <div class="form__group">
+              <label for="phone" class="form__label">Phone</label>
+              <input
+                type="tel"
+                name="phone"
+                class="form__input"
+                id="phone"
+                placeholder="Enter your phone..."
+              />
+            </div>
+          </form>
+        </div>
+        <div class="address">
+          <h4 class="address__title">Shipping address</h4>
+          <form action="" class="address__form">
+            <div class="form__group">
+              <label for="name" class="form__label">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form__input"
+                placeholder="Your Full Name"
+              />
+            </div>
+            <div class="form__group">
+              <label for="address" class="form__label">Address</label>
+              <input
+                type="text"
+                id="address"
+                class="form__input"
+                placeholder="Your address.."
+              />
+            </div>
+            <div class="form__group">
+              <label for="city" class="form__label">City</label>
+              <input
+                type="text"
+                id="city"
+                class="form__input"
+                placeholder="Your city.."
+              />
+            </div>
+            <div class="form__group form__group--inline">
+              <label for="country" class="form__label">Country</label>
+              <input
+                type="text"
+                id="country"
+                class="form__input"
+                placeholder="Your country"
+              />
+            </div>
+            <div class="form__group form__group--inline">
+              <label for="postal-code" class="form__label">Postal code</label>
+              <input
+                type="text"
+                id="postal-code"
+                class="form__input"
+                placeholder="Your postal code..."
+              />
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                class="checkbox-group__input"
+                name="save"
+                id="save"
+              />
+              <label for="save" class="checkbox-group__label"
+                >Save this information for next time</label
+              >
+            </div>
+            <button type="submit" class="btn-submit">Continue</button>
+          </form>
+        </div>
+      </div>
+      <p class="attribution">
+        created by
+        <a
+          href="https://www.linkedin.com/in/abhinav-sawarkar-890a15144/"
+          class="btn-author"
+          >abhinav sawarkar</a
+        >
+        -
+        <a href="https://devchallenges.io/" class="btn-challenge"
+          >devchallenges.io</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
