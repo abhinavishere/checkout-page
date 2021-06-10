@@ -28,8 +28,8 @@
 
 ## Overview
 
-![screenshot](./checkoutform_desktop)
-![screenshot-mobile](./checkoutform_mobile)
+![screenshot](./checkoutform_desktop.png)
+![screenshot-mobile](./checkoutform_mobile.png)
 
 ## Acknowledgements
 
